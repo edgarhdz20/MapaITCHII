@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mapa ITCH II</title>
+	<!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper indigo darken-3">
+			<form>
+        		<div class="input-field">
+          			<input id="search" type="search" placeholder="Buscar edificio" required>
+          			<label for="search"><i class="material-icons">search</i></label>
+          			<i class="material-icons">close</i>
+        		</div>
+      		</form>
+		</div>
+	</nav>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+	</script>
+	<div id="mapa">
+	</div>
+
+	<div id="info">
+		<div>Aqui va informacion del lugar</div>
+		<button class="waves-effect waves-light btn" onclick="masInfo()" id="botonInfo">Mas informacion</button>
+	</div>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
